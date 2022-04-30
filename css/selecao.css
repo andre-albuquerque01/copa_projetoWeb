@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://uploads.metropoles.com/wp-content/uploads/2021/06/03103510/Taca-da-Copa-do-Mundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #fff;
+}
+
+.selecao {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #fff;
+    text-align: justify;
+    padding: 0px 20px 0 20px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-content: center;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #00f;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: #0f0;
+}
+
+td {
+    border: 1px solid #000;
+    border-left-width: 0;
+    min-width: 120px;
+    height: 18px;
+}
+
+.jogos {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.jogos a {
+    text-decoration: none;
+    color: #72727e;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.jogos a:hover {
+    text-decoration: underline;
+}
+
+.rod1,
+.rod2,
+.rod3 {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    body,
+    * {
+        background-image: none;
+        color: #000;
+    }
+
+    .tabela {
+        margin-left: 0;
+    }
+
+    .jogos {
+        display: block;
+        width: 100%;
+    }
+
+    .selecao {
+        text-align: justify;
+    }
+
+    .rod3 {
+        width: 75%;
+        /* font-size: small; */
+    }
+
+    .title {
+        font-size: small;
+    }
+}

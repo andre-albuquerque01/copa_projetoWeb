@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://uploads.metropoles.com/wp-content/uploads/2021/06/03103510/Taca-da-Copa-do-Mundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 450px 90px 97px;
+    gap: 20px;
+    grid-template-areas: "h h"
+        "b b2"
+        "b3 b3"
+        "b4 b4"
+        "b5 b5"
+        "f f";
+}
+
+header {
+    /* border: #ffffff solid 1px; */
+    text-align: center;
+    grid-area: h;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+/* Sobre o pais */
+.block1 {
+    /* border: #ffffff solid 1px; */
+    word-wrap: break-word;
+    grid-area: b;
+    justify-self: center;
+    width: 95%;
+    text-align: justify;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+/* Sobre a copa */
+.block2 {
+    /* border: #ffffff solid 1px; */
+    word-wrap: break-word;
+    grid-area: b2;
+    justify-self: center;
+    width: 95%;
+    text-align: justify;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+/* Grupos */
+.block3 {
+    /* border: #0f0 solid 1px; */
+    grid-area: b3;
+    justify-self: center;
+    width: 95%;
+    border-radius: 20px;
+    text-align: center;
+    color: #f00;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+
+.grupos ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-content: center;
+    color: #0f0;
+    /* margin-top: -5px; */
+}
+
+.grupos a {
+    text-decoration: none;
+    color: #0f0;
+}
+
+.grupos a:hover {
+    text-decoration: underline;
+    color: #0f0;
+}
+.block4 {
+    /* border: #0f0 solid 1px; */
+    grid-area: b4;
+    justify-self: center;
+    width: 95%;
+    border-radius: 20px;
+    text-align: center;
+    color: #f00;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+
+.estadios ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-content: center;
+    color: #0f0;
+    /* margin-top: -5px; */
+}
+
+.estadios a {
+    text-decoration: none;
+    color: #0f0;
+}
+
+.estadios a:hover {
+    text-decoration: underline;
+    color: #0f0;
+}
+.block5 {
+    /* border: #0f0 solid 1px; */
+    grid-area: b5;
+    justify-self: center;
+    width: 95%;
+    border-radius: 20px;
+    text-align: center;
+    color: #f00;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+
+.selecao ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-content: center;
+    color: #0f0;
+    /* margin-top: -5px; */
+}
+
+.selecao a {
+    text-decoration: none;
+    color: #0f0;
+}
+
+.selecao a:hover {
+    text-decoration: underline;
+    color: #0f0;
+}
+
+/* Roda pe */
+footer {
+    /* border: #ffffff solid 1px; */
+    text-align: center;
+    grid-area: f;
+}
+
+footer p {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    margin-top: 10%;
+}
+
+@media (max-width: 790px) and (min-width: 700px) {
+
+    .block3,
+    footer {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .block3,
+    footer {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    body,
+    * {
+        background-image: none;
+        color: #000;
+        /* font-size: small; */
+    }
+
+    #conteiner {
+        display: block;
+    }
+
+    .block1,
+    .block2,
+    .block3 {
+        text-align: justify;
+    }
+
+    .block3 ul {
+        display: block;
+        text-decoration: dashed;
+    }
+    .block4 ul {
+        display: block;
+        text-decoration: dashed;
+        text-align: start;
+    }
+    .block4 h2 {
+        text-align: start;
+    }
+    .block5 h2 {
+        text-align: start;
+    }
+
+    .block5 ul {
+        display: block;
+        text-decoration: dashed;
+        text-align: start;
+    }
+
+    footer p {
+        color: #000;
+    }
+}
