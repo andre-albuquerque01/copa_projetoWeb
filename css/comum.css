@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://uploads.metropoles.com/wp-content/uploads/2021/06/03103510/Taca-da-Copa-do-Mundo.jpg');
+    background-repeat: no-repeat;
+    /* background-color: #000; */
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
